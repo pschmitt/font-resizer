@@ -42,7 +42,9 @@ def main():
     parser = argparse.ArgumentParser(
         description="Scale the line height of multiple fonts."
     )
-    parser.add_argument("font_paths", nargs="+", help="Paths to the font files")
+    parser.add_argument(
+        "font_paths", nargs="+", help="Paths to the font files"
+    )
     parser.add_argument(
         "--scale",
         type=float,

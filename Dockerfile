@@ -2,6 +2,6 @@ FROM alpine:3
 
 RUN apk add --no-cache py3-fontforge fontforge
 
-COPY ./resize.py /resize.py
+COPY ./font-resize.py /font-resize.py
 
-ENTRYPOINT ["/resize.py"]
+ENTRYPOINT ["/font-resize.py"]
