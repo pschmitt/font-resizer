@@ -33,8 +33,8 @@ docker run -it --rm \
 
 This should produce the following files in your `myfonts/` directory:
 
-- ComicCodeNerdFont-Regular-resized.otf
-- ComicCodeLigaturesNerdFont-Regular-resized.otf
+- `ComicCodeNerdFont-Regular-resized.otf`
+- `ComicCodeLigaturesNerdFont-Regular-resized.otf`
 
 ## 🖋️ License
 
