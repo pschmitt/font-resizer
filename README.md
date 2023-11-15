@@ -11,10 +11,12 @@ See issue: https://github.com/ryanoasis/nerd-fonts/issues/1165
 
 ## 🚀 Getting Started
 
-- Python 3.10 or higher.
-- [FontForge](https://fontforge.org/en-US/) installed on your system.
+Either:
 
-or: docker/podman.
+- Python 3.10+
+- [FontForge](https://fontforge.org/en-US/) and its Python bindings
+
+**or**: `docker`/`podman`
 
 ## 💥 Usage
 
