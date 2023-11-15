@@ -1,6 +1,11 @@
-import fontforge
+#!/usr/bin/env python
+# coding: utf-8
+
 import argparse
 import os
+
+import fontforge
+
 
 def scale_line_height(font_path, scale_factor):
     try:
@@ -32,16 +37,25 @@ def scale_line_height(font_path, scale_factor):
         font.close()
         return modified_font_path
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Scale the line height of multiple fonts.")
-    parser.add_argument("font_paths", nargs='+', help="Paths to the font files")
-    parser.add_argument("--scale", type=float, default=1.0, help="Scale factor for line height (e.g., 1.3 to increase by 30%)")
+    parser = argparse.ArgumentParser(
+        description="Scale the line height of multiple fonts."
+    )
+    parser.add_argument("font_paths", nargs="+", help="Paths to the font files")
+    parser.add_argument(
+        "--scale",
+        type=float,
+        required=True,
+        help="Scale factor for line height (e.g., 1.3 to increase by 30%)",
+    )
 
     args = parser.parse_args()
 
     for font_path in args.font_paths:
         modified_font_path = scale_line_height(font_path, args.scale)
         print(f"Scaled font saved as: {modified_font_path}")
+
 
 if __name__ == "__main__":
     main()
