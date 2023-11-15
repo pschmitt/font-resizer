@@ -4,7 +4,7 @@ font-resizer is a Python script that allows for easy scaling of
 the line height in font files.
 
 This tool is particularly useful for [Comic Code](https://tosche.net/fonts/comic-code)
-users that are plague with wrong line heights after patching
+users that are plagued with wrong line heights after patching their beloved font
 using [NerdFonts-patcher](https://github.com/ryanoasis/nerd-fonts).
 
 See issue: https://github.com/ryanoasis/nerd-fonts/issues/1165
