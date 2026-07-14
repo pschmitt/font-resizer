@@ -49,7 +49,7 @@ def main():
         "--scale",
         type=float,
         required=True,
-        help="Scale factor for line height (e.g., 1.3 to increase by 30%)",
+        help="Scale factor for line height (e.g., 1.3 to increase by 30%%)",
     )
 
     args = parser.parse_args()
